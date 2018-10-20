@@ -1,0 +1,65 @@
+{
+  "name": "bluetooth_mqtt_tracker",
+  "version": "0.0.1",
+  "slug": "bluetooth_mqtt_tracker",
+  "description": "Automatically scan Bluetooth devices in the list",
+  "arch": ["armhf"],
+  "url": "https://github.com/zxjrm/hassio-addons/tree/master/bluetooth_mqtt_tracker",
+  "startup": "application",
+  "boot": "auto",
+  "host_network": "true",
+  "ports": {},
+  "map": [],
+  "options": {
+    "mqtt_address":"192.168.100.100",
+    "mqtt_user":"username",
+    "mqtt_password":"password",
+    "mqtt_port":"1883",
+    "mqtt_topic":"/bt/tracker",
+    "blue_list":[
+        {
+        	"name":"tom",
+        	"mac": "01:23:45:67:89:AB"
+        },
+        {
+          "name":"Jack",
+          "mac": "01:23:45:67:89:AB"
+        },
+        {
+          "name":"Elspie",
+          "mac": "01:23:45:67:89:AB"
+        },
+        {
+          "name":"Gawain",
+          "mac": "01:23:45:67:89:AB"
+        }
+      ]
+  },
+  "schema": {
+    "sleep_time":"int?",
+    "mqtt_address":"str",
+    "mqtt_user":"str",
+    "mqtt_password":"str",
+    "mqtt_port":"port?",
+    "mqtt_topic":"str",
+    "blue_list":[
+        {
+          "name":"str",
+          "mac": "str"
+        },
+        {
+          "name":"str",
+          "mac": "str"
+        },
+        {
+          "name":"str",
+          "mac": "str"
+        },
+        {
+          "name":"str",
+          "mac": "str"
+        }
+      ]
+  },
+  "image": "zxjrm/bluetooth-mqtt-tracker"
+}
