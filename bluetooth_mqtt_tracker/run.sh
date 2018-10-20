@@ -53,14 +53,7 @@ while true; do
 		MAC=$(jq --raw-output ".blue_list[${i}].mac" ${OPTIONS})
 		NAME=$(jq --raw-output ".blue_list[${i}].name" ${OPTIONS})
 		BLUE_SCAN
-		if [[ $? == 1 ]]; then
-			STATUS="not_home"
-			if [[ "${STATUS}" != "${DEV_STATUS[${i}]}" ]]; then
-				DEV_STATUS[${i}]=${STATUS}
-				mosquitto_pub -h ${MQTT_ADDR} -u ${MQTT_USER} -P ${MQTT_PWD} -p ${MQTT_PORT} -t "${MQTT_TOPIC}/${NAME}" -m not_home
-				echo "${NAME} ${DEV_STATUS[${i}]}"
-			fi
-		else
+		if [[ $? == 0 ]]; then
 			STATUS="home"
 			if [[ "${STATUS}" != "${DEV_STATUS[${i}]}" ]]; then
 				DEV_STATUS[${i}]=${STATUS}
