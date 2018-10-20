@@ -5,7 +5,7 @@
 ## 使用方法
 
 ### 1.修改 options
-
+```
 {
   "sleep_time":"2",
   "try_number":"1",
@@ -34,6 +34,7 @@
     ]
 }
 ```
+```
 **配置列表**
 
 | 选项 | 必须 | 说明 | 例子 |
@@ -51,6 +52,7 @@
 
 ### 2.编写 Home Assistant 传感器配置
 
+```
 ```
 device_tracker:
   - platform: mqtt
