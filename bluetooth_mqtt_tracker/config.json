@@ -18,19 +18,19 @@
     "mqtt_topic":"/bt/tracker",
     "blue_list":[
         {
-        	"name":"tom",
+        	"name":"a",
         	"mac": "01:23:45:67:89:AB"
         },
         {
-          "name":"Jack",
+          "name":"b",
           "mac": "01:23:45:67:89:AB"
         },
         {
-          "name":"Elspie",
+          "name":"c",
           "mac": "01:23:45:67:89:AB"
         },
         {
-          "name":"Gawain",
+          "name":"d",
           "mac": "01:23:45:67:89:AB"
         }
       ]

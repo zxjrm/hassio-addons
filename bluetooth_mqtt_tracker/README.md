@@ -22,6 +22,14 @@
       {
         "name":"b",
         "mac": "01:23:45:67:89:AB"
+      },
+      {
+        "name":"c",
+        "mac": "01:23:45:67:89:AB"
+      },
+      {
+        "name":"d",
+        "mac": "01:23:45:67:89:AB"
       }
     ]
 }
@@ -49,6 +57,8 @@ device_tracker:
     devices:
       a: '/bt/tracker/a'
       b: '/bt/tracker/b'
+      c: '/bt/tracker/c'
+      d: '/bt/tracker/d'
     qos: 0
 
 group:
@@ -58,6 +68,8 @@ group:
     entities:
       - device_tracker.a
       - device_tracker.b
+      - device_tracker.c
+      - device_tracker.d
 ```
 注意事项：
 devices下面填写的是 hass实体名字:'mqtt主题/blue_list里面的name'

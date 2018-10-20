@@ -13,7 +13,7 @@ declare -a DEV_STATUS
 #chack
 hcitool dev | grep hci
 if [[ $? -ne 0 ]]; then
-	echo "No Bluetooth device found, see the guide https://github.com/neroxps/hassio-addons/tree/master/bluetooth_scan_tracker"
+	echo "没有发现蓝牙适配器"
 elif [[ ${MQTT_PORT} == "null" ]]; then
 	MQTT_PORT=1883
 elif [[ ${SLEEP_NUM} == "null" ]]; then
@@ -21,13 +21,13 @@ elif [[ ${SLEEP_NUM} == "null" ]]; then
 elif [[ ${TRY_NUM} == "null" ]]; then
 	TRY_NUM=1
 elif [[ ${MQTT_ADDR} == "null" ]]; then
-	echo "MQTT_ADDR is empty, see the guide https://github.com/neroxps/hassio-addons/tree/master/bluetooth_scan_tracker"
+	echo "请设置MQTT服务器地址,更多请访问 https://github.com/zxjrm/hassio-addons/tree/master/bluetooth_mqtt_tracker"
 	exit 1
 elif [[ ${MQTT_TOPIC} == "null" ]]; then
-	echo "MQTT_TOPIC is empty, see the guide https://github.com/neroxps/hassio-addons/tree/master/bluetooth_scan_tracker"
+	echo "请设置mqtt主题, 更多请访问 https://github.com/zxjrm/hassio-addons/tree/master/bluetooth_mqtt_tracker"
 	exit 1
 elif [[ ${BLUE_LISTS} == "null" ]]; then
-	echo "BLUE_LISTS is empty, see the guide https://github.com/neroxps/hassio-addons/tree/master/bluetooth_scan_tracker"
+	echo "请设置蓝牙列表, 更多请访问 https://github.com/zxjrm/hassio-addons/tree/master/bluetooth_mqtt_tracker"
 	exit 1
 fi
 
@@ -57,14 +57,14 @@ while true; do
 			STATUS="not_home"
 			if [[ "${STATUS}" != "${DEV_STATUS[${i}]}" ]]; then
 				DEV_STATUS[${i}]=${STATUS}
-				mosquitto_pub -h ${MQTT_ADDR} -u ${MQTT_USER} -P ${MQTT_PWD} -p ${MQTT_PORT} -t "${MQTT_TOPIC}/${NAME}" -m leave
+				mosquitto_pub -h ${MQTT_ADDR} -u ${MQTT_USER} -P ${MQTT_PWD} -p ${MQTT_PORT} -t "${MQTT_TOPIC}/${NAME}" -m not_home
 				echo "${NAME} ${DEV_STATUS[${i}]}"
 			fi
 		else
 			STATUS="home"
 			if [[ "${STATUS}" != "${DEV_STATUS[${i}]}" ]]; then
 				DEV_STATUS[${i}]=${STATUS}
-				mosquitto_pub -h ${MQTT_ADDR} -u ${MQTT_USER} -P ${MQTT_PWD} -p ${MQTT_PORT} -t "${MQTT_TOPIC}/${NAME}" -m enter
+				mosquitto_pub -h ${MQTT_ADDR} -u ${MQTT_USER} -P ${MQTT_PWD} -p ${MQTT_PORT} -t "${MQTT_TOPIC}/${NAME}" -m home
 				echo "${NAME} ${DEV_STATUS[${i}]}"
 			fi
 		fi
