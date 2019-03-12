@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "slug": "bluetooth_mqtt_tracker",
   "description": "Automatically scan Bluetooth devices in the list",
-  "arch": ["armhf"],
+  "arch": ["armhf","amd64"],
   "url": "https://github.com/zxjrm/hassio-addons/tree/master/bluetooth_mqtt_tracker",
   "startup": "application",
   "boot": "auto",
