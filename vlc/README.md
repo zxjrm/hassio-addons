@@ -1,27 +1,24 @@
-# Community Hass.io Add-ons: Local VLC
+# Hass.io 附加组件 VLC
 
-Run a VLC player on your hass.io installation.
+在你的hass.io上运行的VLC播放器。
 
-Control it using the web interface or with the new [VLC Telnet component](https://www.home-assistant.io/components/vlc-telnet/) and control the player from your HA Automations!
+使用Web界面或新的[VLC Telnet组件](https://www.home-assistant.io/components/vlc-telnet/)对其进行控制，并通过HA Automations控制播放器！
 
-Place your media files on the /share folder in your hass.io or play files from network locations, Internet included! Try for example online radios!
+将媒体文件放在hass.io的share文件夹中，或从网络位置（包括Internet）播放文件！例如在线广播！
 
-**Current state**: **Fully functional**
+## 安装
+1. 请按照本教程中的步骤将此存储库（https://github.com/zxjrm/hassio-addons）添加到hassio安装中。
+2. 使用页面右上方的白色箭头刷新加载项.
+3. 在列表中搜索“VLC”，然后单击它.
+4. 单击安装按钮，然后等待！可能要花几分钟。
+5. 为您的vlc配置telnet和Web界面的密码
+6. 配置您的音频输出设备。
+7. 点击开始！
 
-## Installation
-1. Follow the steps on [this tutorial](https://www.home-assistant.io/hassio/installing_third_party_addons/) to add this repository (https://github.com/rodripf/hassio-local-vlc) to your hassio installation.
-2. Refresh the add-ons using the white arrow on the top right of the page
-3. Search for "Local VLC" on the list and click on it
-4. Click on the install button and wait! It could take a couple of minutes.
-5. Configure a password for your telnet and web interface
-6. Configure your audio output device.
-7. Click on start!
-
-If everything was OK, you can now:
-* Control the player using the web interface, clicking the button "Open Web UI" and using a blank user with the password you configured.
-* Control the player using the telnet interface, for which you can use the [VLC Telnet component](https://www.home-assistant.io/components/vlc-telnet/), configuring 127.0.0.1 (localhost) as the host, 4212 as the port and the configured password.
+如果一切正常，您现在可以：
+* 使用Web界面，单击“打开Web UI”按钮并使用具有您配置的密码的空白用户来控制播放器。
+* 使用telnet界面控制播放器, 您可以使用[VLC Telnet组件](https://www.home-assistant.io/components/vlc-telnet/), 将127.0.0.1（localhost）配置为主机，将4212配置为端口，并配置密码。
 
 
-## Troubleshooting
-* Make sure you select the correct audio output. If the audio doesn't work at first, change the configuration and restart the add on. It depends on your device.
-* If you have any other problem, please fill an issue to this project. Please include the add on log and the system log to your report.
+## 故障排除
+* 确保选择正确的音频输出。如果一开始音频不起作用，请更改配置并重新启动组件。
