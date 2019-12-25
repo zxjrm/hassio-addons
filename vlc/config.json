@@ -1,0 +1,26 @@
+{
+    "name": "VLC",
+    "version": "17",
+    "slug": "vlc",
+    "description": "Play multimedia locally using VLC player",
+    "url": "https://github.com/zxjrm/hassio-addons/tree/master/vlc",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+    "startup": "application",
+    "boot": "off",
+    "options": {
+        "telnet_password": "mypassword",
+        "http_password": "mypassword"
+    },    
+    "schema": {
+        "telnet_password": "str",
+        "http_password": "str"
+    },
+    "audio": true,
+    "ports":{
+        "9892/tcp":9892,
+        "4212/tcp":4212
+    },
+    "webui": "http://[HOST]:[PORT:9892]/",
+    "map": ["share:ro", "ssl"],
+    "image": "zxjrm/vlc-{arch}"
+  }
