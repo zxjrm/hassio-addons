@@ -7,7 +7,7 @@
 将媒体文件放在hass.io的share文件夹中，或从网络位置（包括Internet）播放文件！例如在线广播！
 
 ## 安装
-1. 请按照本教程中的步骤将此存储库(https://github.com/zxjrm/hassio-addons)添加到hassio中。
+1. 请按照本教程中的步骤将此[存储库](https://github.com/zxjrm/hassio-addons)添加到hassio中。
 2. 使用页面右上方的白色刷新按钮刷新页面.
 3. 在列表中搜索“VLC”，然后单击它.
 4. 单击安装按钮，然后等待！可能要花几分钟。
