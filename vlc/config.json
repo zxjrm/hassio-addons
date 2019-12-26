@@ -1,6 +1,6 @@
 {
     "name": "VLC",
-    "version": "0.0.1",
+    "version": "0.01",
     "slug": "vlc",
     "description": "VLC播放器",
     "url": "https://github.com/zxjrm/hassio-addons/tree/master/vlc",
