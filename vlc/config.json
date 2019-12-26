@@ -6,7 +6,7 @@
     "url": "https://github.com/zxjrm/hassio-addons/tree/master/vlc",
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "startup": "application",
-    "boot": "off",
+    "boot": "auto",
     "options": {
         "telnet_password": "mypassword",
         "http_password": "mypassword"
