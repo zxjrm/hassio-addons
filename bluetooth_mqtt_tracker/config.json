@@ -2,7 +2,7 @@
   "name": "bluetooth_mqtt_tracker",
   "version": "0.0.1",
   "slug": "bluetooth_mqtt_tracker",
-  "description": "Automatically scan Bluetooth devices in the list",
+  "description": "扫描蓝牙设备并且转换为mqtt",
   "arch": [
     "amd64",
     "armhf",
