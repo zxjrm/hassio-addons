@@ -9,10 +9,10 @@
     "boot": "auto",
     "host_network": true,
     "options": {
-        "dlan_name": "home_dlna"
+        "dlna_name": "home_dlna"
     },    
     "schema": {
-        "dlan_name": "str"
+        "dlna_name": "str"
     },
     "audio": true,
     "map": ["share:ro"],
