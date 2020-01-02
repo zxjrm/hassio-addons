@@ -5,7 +5,6 @@
     "description": "DLNA播放器",
     "url": "https://github.com/zxjrm/hassio-addons/tree/master/dlna",
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
-  //  "startup": "application",
     "startup": "services",
     "boot": "auto",
     "host_network": true,
