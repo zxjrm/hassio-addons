@@ -2,7 +2,7 @@
 
 在你的hass.io上运行的dlna播放器。
 
-使用HomeAssistant的[DLNA组件](https://www.home-assistant.io/components/dlna/)对其进行控制的播放器！
+使用HomeAssistant的[DLNA组件](https://www.home-assistant.io/components/dlna_dmr/)对其进行控制的播放器！
 
 ## 安装
 1. 请按照本教程中的步骤将此[存储库](https://github.com/zxjrm/hassio-addons)添加到hassio中。
