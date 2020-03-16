@@ -7,7 +7,6 @@
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "startup": "application",
     "boot": "auto",
-    "audio": true,
     "video": true,
     "host_dbus": true,
     "devices": ["/dev/snd:/dev/snd:rw"],
@@ -19,7 +18,6 @@
         "telnet_password": "str",
         "http_password": "str"
     },
-    "audio": true,
     "ports":{
         "9892/tcp":9892,
         "4212/tcp":4212
