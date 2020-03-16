@@ -7,6 +7,10 @@
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "startup": "application",
     "boot": "auto",
+    "audio": true,
+    "video": true,
+    "host_dbus": true,
+    "devices": ["/dev/snd:/dev/snd:rw"],
     "options": {
         "telnet_password": "mypassword",
         "http_password": "mypassword"

@@ -15,6 +15,7 @@
         "dlna_name": "str"
     },
     "audio": true,
+    "devices": ["/dev/snd:/dev/snd:rw"],
     "map": ["share:ro"],
     "image": "zxjrm/dlna-{arch}"
   }
