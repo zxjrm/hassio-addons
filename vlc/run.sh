@@ -1,4 +1,5 @@
 #!/bin/sh
+mpd
 CONFIG_PATH=/data/options.json
 HTTP_PASS="$(jq --raw-output '.http_password' $CONFIG_PATH)"
 TELNET_PASS="$(jq --raw-output '.telnet_password' $CONFIG_PATH)"

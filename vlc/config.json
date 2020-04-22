@@ -1,5 +1,5 @@
 {
-    "name": "VLC",
+    "name": "VLC1",
     "version": "0.01",
     "slug": "vlc",
     "description": "VLC播放器",
@@ -10,7 +10,6 @@
     "audio": true,
     "video": true,
     "host_dbus": true,
-    "devices": ["/dev/snd:/dev/snd:rw"],
     "options": {
         "telnet_password": "mypassword",
         "http_password": "mypassword"
@@ -20,6 +19,7 @@
         "http_password": "str"
     },
     "ports":{
+        "6600/tcp":6600,
         "9892/tcp":9892,
         "4212/tcp":4212
     },
