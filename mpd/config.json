@@ -1,0 +1,22 @@
+{
+    "name": "MPD",
+    "version": "0.01",
+    "slug": "mpd",
+    "description": "MPD播放器",
+    "url": "https://github.com/zxjrm/hassio-addons/tree/master/mpd",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+    "startup": "services",
+    "boot": "auto",
+    "audio": true,
+    "options": {
+        "password": "mypassword"
+    },    
+    "schema": {
+        "password": "str"
+    },
+    "ports":{
+        "6600/tcp":6700
+    },
+    "map": ["share:rw", "ssl"],
+    "image": "zxjrm/mpd-{arch}"
+  }
