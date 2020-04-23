@@ -15,7 +15,7 @@
         "password": "str"
     },
     "ports":{
-        "6600/tcp":6700
+        "6600/tcp":6600
     },
     "map": ["share:rw", "ssl"],
     "image": "zxjrm/mpd-{arch}"
