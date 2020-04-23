@@ -15,7 +15,7 @@
 6. 点击开始！
 
 如果一切正常，您现在可以：
-* 您可以使用[MPD组件](https://www.home-assistant.io/components/mpd/),将127.0.0.1配置为主机，将6700配置为端口。
+* 您可以使用[MPD组件](https://www.home-assistant.io/components/mpd/),将127.0.0.1配置为主机，将6600配置为端口。
 
 
 ## 故障排除
