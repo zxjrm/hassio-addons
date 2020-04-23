@@ -1,8 +1,8 @@
 {
-  "name": "bluetooth_mqtt_tracker",
+  "name": "Bluetooth_mqtt_tracker",
   "version": "0.0.1",
-  "slug": "bluetooth_mqtt_tracker",
-  "description": "扫描蓝牙设备并且转换为mqtt",
+  "slug": "Bluetooth_mqtt_tracker",
+  "description": "蓝牙设备定位",
   "arch": [
     "amd64",
     "armhf",
