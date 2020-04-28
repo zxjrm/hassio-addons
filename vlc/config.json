@@ -19,7 +19,7 @@
         "http_password": "str"
     },
     "ports":{
-        "9892/tcp":null,
+        "9892/tcp":9892,
         "4212/tcp":4212
     },
     "ports_description": {
