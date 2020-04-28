@@ -10,6 +10,12 @@
     "audio": true,
     "host_dbus": true,
     "homeassistant_api": true,
+    "options": {
+        "password": "mypassword"
+    },    
+    "schema": {
+        "password": "str"
+    },
     "ports":{
         "5000/tcp":null
     },
