@@ -2,7 +2,7 @@
   "name": "motionEye",
   "version": "0.01",
   "slug": "motioneye",
-  "description": "一个简单的NVR",
+  "description": "涓�涓畝鍗曠殑NVR",
   "url": "https://github.com/zxjrm/hassio-addons/tree/master/motioneye",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:8765]",
   "startup": "application",
