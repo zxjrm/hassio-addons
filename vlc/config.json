@@ -19,9 +19,15 @@
         "http_password": "str"
     },
     "ports":{
-        "9892/tcp":9892,
+        "9892/tcp":null,
         "4212/tcp":4212
     },
+    "ports_description": {
+        "9892/tcp": "WEB页面的端口(未设置使用hassio代理)"
+    },
+    "ingress": true,
+    "ingress_port": 0,
+    "panel_icon": "mdi:vlc",
     "webui": "http://[HOST]:[PORT:9892]/",
     "map": ["share:ro", "ssl"],
     "image": "zxjrm/vlc-{arch}"
