@@ -27,5 +27,5 @@
     "panel_icon": "mdi:robot",
     "webui": "http://[HOST]:[PORT:5000]/",
     "map": ["share:rw"],
-    "image": "zxjrm/wukong-robot"
+    "image": "zxjrm/wukong-robot-{arch}"
   }
