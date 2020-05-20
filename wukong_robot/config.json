@@ -4,7 +4,7 @@
     "slug": "wukong_robot",
     "description": "悟空语音助手",
     "url": "https://github.com/zxjrm/hassio-addons/tree/master/wukong_robot",
-    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+    "arch": ["amd64"],
     "startup": "application",
     "boot": "auto",
     "audio": true,
