@@ -1,0 +1,21 @@
+{
+    "name": "Nginx",
+    "version": "0.01",
+    "slug": "nginx",
+    "description": "NginxWeb客户端",
+    "url": "https://github.com/zxjrm/hassio-addons/tree/master/nginx",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+    "startup": "services",
+    "boot": "auto",
+    "host_network": true,
+    "options": {
+        "telnet_password": "mypassword",
+        "http_password": "mypassword"
+    },    
+    "schema": {
+        "telnet_password": "str",
+        "http_password": "str"
+    },
+    "map": ["share:rw"],
+    "image": "zxjrm/nginx-{arch}"
+  }
