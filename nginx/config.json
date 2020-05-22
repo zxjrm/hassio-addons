@@ -2,7 +2,7 @@
     "name": "Nginx",
     "version": "0.01",
     "slug": "nginx",
-    "description": "NginxWeb客户端",
+    "description": "Nginx_Web客户端",
     "url": "https://github.com/zxjrm/hassio-addons/tree/master/nginx",
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "startup": "services",
