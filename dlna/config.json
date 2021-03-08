@@ -15,7 +15,7 @@
     "schema": {
         "dlna_name": "str"
     },
-    "devices": ["/dev/snd:rw"],
+    "devices": ["/dev/snd"],
     "map": ["share:ro"],
     "image": "zxjrm/dlna-{arch}"
   }
